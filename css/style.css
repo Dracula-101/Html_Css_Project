@@ -68,8 +68,8 @@ h3 {
 }
 
 ::selection {
-    color: var(--main-color);
-    background-color: var(--cream);
+    color: var(--black-alpha-40);
+    background-color: var(--orange-light);
 }
 
 .header {
@@ -151,6 +151,10 @@ h3 {
 .header-close-btn,
 .header-hamburger-btn {
     display: none;
+}
+
+.btn-block {
+    width: 100%;
 }
 
 /* Banner */
@@ -651,4 +655,299 @@ textarea.form-control {
     display: flex;
     justify-content: space-between;
     margin-right: 2rem;
+}
+
+.course-join button,
+.course-join a {
+    margin: 0 10px;
+}
+
+.courses-details .box {
+    padding: 2rem;
+}
+
+.course-header h2 {
+    font-size: 30px;
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.course-header .average-rating {
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.course-header .average-stars i {
+    font-size: 14px;
+    color: var(--orange);
+}
+
+.course-header .rating span {
+    vertical-align: middle;
+}
+
+.course-header ul li {
+    margin-bottom: 6px 0 0;
+    text-transform: capitalize;
+}
+
+.course-header ul li span {
+    margin-left: 5px;
+
+}
+
+.course-tabs {
+    margin: 30px 0 20px;
+}
+
+.course-tabs .nav-link {
+    margin: 0 10px 10px 0;
+}
+
+.course-curriculum .accordion-item {
+    border-color: var(--border-color);
+    background-color: transparent;
+}
+
+.course-curriculum .accordion-button span {
+    position: absolute;
+    right: 17px;
+    font-size: 14px;
+}
+
+.course-curriculum .accordion-button::after {
+    content: '\f077';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    background-image: none;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    line-height: 1;
+}
+
+.course-curriculum .accordion-button {
+    background-color: transparent;
+    color: var(--black-90);
+    font-weight: 300;
+    flex-wrap: true;
+    padding-left: 3rem;
+    padding-right: 160px;
+    line-height: 1.5;
+}
+
+.course-curriculum .accordion-button:focus {
+    box-shadow: none;
+}
+
+.course-curriculum .accordion-button:not(.collapsed) span {
+    font-weight: 500;
+}
+
+.course-curriculum .accordion-button:not(.collapsed)::after {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.course-curriculum .accordion-button:not(.collapsed) {
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    transition: none;
+    box-shadow: none;
+}
+
+.course-curriculum ul li {
+    position: relative;
+    padding: 0 50px 0 20px;
+    font-size: 16px;
+}
+
+.course-curriculum ul li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.course-curriculum ul li i {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--black-70);
+}
+
+
+.course-instructor .img-box img {
+    max-width: 128px;
+    margin-bottom: 15px;
+}
+
+.course-instructor h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.course-instructor h4 span {
+    font-weight: 300;
+}
+
+.course-instructor ul li span {
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+
+.course-instructor ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+
+.rating-summary .average-rating {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black-90);
+}
+
+.rating-summary .average-stars i {
+    color: var(--main-color);
+}
+
+.rating-summary .rating-bars-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.rating-summary .progress {
+    height: 8px;
+    background-color: var(--border-color-2);
+
+    width: 100%;
+    margin-right: 20px;
+    border-bottom: 20px;
+    border-radius: 0;
+}
+
+.rating-summary .progress-bar {
+    background-color: var(--main-color);
+}
+
+.rating-summary .star-text {
+    min-width: 60px;
+    color: var(--orange);
+}
+
+.reviews-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 65px;
+}
+
+.reviews-item .img-box {
+    max-width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.reviews-item h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px;
+
+    color: var(--black-50);
+}
+
+.reviews-item .stars-rating i {
+    color: var(--orange);
+    font-size: 14px;
+}
+
+.reviews-item .stars-rating .date {
+    margin: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.reviews-item p {
+    margin: 5px 0 0;
+}
+
+.course-sidebar .img-box {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-sidebar .img-box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-alpha-40);
+}
+
+.course-sidebar .play-icon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    background-color: var(--main-color);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.course-sidebar .img-box p {
+    position: absolute;
+    color: var(--WHITE);
+    font-weight: 500;
+    top: calc(50% + 40px);
+    font-weight: 500;
+    width: 100%;
+}
+
+.course-sidebar .price span {
+    margin-right: 8px;
+}
+
+.course-sidebar .price-new {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black-90);
+}
+
+
+.course-sidebar .price-discount {
+    color: var(--main-color);
+}
+
+.course-sidebar .features-list li {
+    position: relative;
+    padding-left: 21px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.course-sidebar .features-list li::before {
+    content: '';
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    background-color: var(--main-color);
+    left: 0;
+    top: 9px;
+    border-radius: 50%;
 }
