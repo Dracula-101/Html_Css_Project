@@ -28,38 +28,40 @@
               js-header-menu-toggler">
             <i class="fas fa-times"></i>
           </button>
-          <div class="header-backdrop js0header-backdrop"></div>
-          <nav class="header-menu js-header-menu">
-            <ul class="menu">
-              <li class="menu-item"><a href="index.html">Home</a></li>
+          <div class="header-backdrop js-header-backdrop">
+            <nav class="header-menu js-header-menu d-none d-sm-flex">
+              <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" class="js-toggle-sub-menu">Courses <i class="fas
+                      fa-chevron-down"></i></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item"><a href="courses.html">
+                        Courses
+                      </a></li>
+                    <li class="sub-menu-item"><a href="courses-details.html">
+                        Course Details
+                      </a></li>
+                </li>
+
+              </ul>
               <li class="menu-item menu-item-has-children">
-                <a href="#" class="js-toggle-sub-menu">Courses <i class="fas
+                <a href="#" class="js-toogle-sub-menu">Pages <i class="fas
                       fa-chevron-down"></i></a>
                 <ul class="sub-menu js-sub-menu">
-                  <li class="sub-menu-item"><a href="courses.html">
-                      Courses
+                  <li class="sub-menu-item"><a href="log-in.html">
+                      Login
                     </a></li>
-                  <li class="sub-menu-item"><a href="courses-details.html">
-                      Course Details
+                  <li class="sub-menu-item"><a href="sign-up.html">
+                      Sign up
                     </a></li>
+                </ul>
               </li>
-
-            </ul>
-            <li class="menu-item menu-item-has-children">
-              <a href="#" class="js-toogle-sub-menu">Pages <i class="fas
-                      fa-chevron-down"></i></a>
-              <ul class="sub-menu js-sub-menu">
-                <li class="sub-menu-item"><a href="log-in.html">
-                    Login
-                  </a></li>
-                <li class="sub-menu-item"><a href="sign-up.html">
-                    Sign up
-                  </a></li>
+              <li class="menu-item"><a href="contact.html">Contact</a></li>
               </ul>
-            </li>
-            <li class="menu-item"><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+            </nav>
+          </div>
+
         </div>
       </div>
     </div>

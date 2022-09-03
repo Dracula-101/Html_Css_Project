@@ -67,6 +67,10 @@ h3 {
     font-size: 20px;
 }
 
+.main-wrapper {
+    overflow: hidden;
+}
+
 ::selection {
     color: var(--black-alpha-40);
     background-color: var(--orange-light);
