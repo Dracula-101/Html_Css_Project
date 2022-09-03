@@ -72,18 +72,21 @@
                             </h2>
                             <form action="">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input type="text" class="form-control" id="signup-name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" id="signup-email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" id="signup-password"
+                                        placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Confirm Password">
+                                    <input type="password" class="form-control" id="signup-confirm-password"
+                                        placeholder="Confirm Password">
                                 </div>
-                                <button type="submit" class="btn btn-theme btn-block btn-form"><span>Sign
+                                <button type="submit" onclick="signupPressed()"
+                                    class="btn btn-theme btn-block btn-form"><span>Sign
                                         Up</span></button>
                                 <p class="text-center mt-4 mb-4">Already have an account ? <a href="log-in.html">Log
                                         In</a></p>

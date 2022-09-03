@@ -72,15 +72,17 @@
                             </h2>
                             <form action="">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" id="login-email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <div class="d-flex mb-2 justify-content-end">
                                         <a href="">Forgot Password</a>
                                     </div>
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" id="login-password"
+                                        placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn btn-theme btn-block btn-form"><span>Log
+                                <button type="submit" onClick="loginPressed()"
+                                    class="btn btn-theme btn-block btn-form"><span>Log
                                         In</span></button>
                                 <p class="text-center mt-4 mb-4">Don't have an account ? <a href="sign-up.html">Sign
                                         In</a></p>
